@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: config-servier
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/chenpanpan0809/springcloud-config.git
+          username: chenpanpan0809
+          password: chen0809
+server:
+  port: 7001
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:1111/eureka/
