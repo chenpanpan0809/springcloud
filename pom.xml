@@ -13,6 +13,8 @@
   <url>http://www.example.com</url>
 <modules>
   <module>eureka-service</module>
+  <module>config-server</module>
+  <module>config-client</module>
 </modules>
 
   <parent>
@@ -29,6 +31,13 @@
   </properties>
 
   <dependencies>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-devtools</artifactId>
+      <optional>true</optional>
+      <scope>true</scope>
+    </dependency>
+
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -99,6 +108,9 @@
         <plugin>
           <groupId>org.springframework.boot</groupId>
           <artifactId>spring-boot-maven-plugin</artifactId>
+          <configuration>
+            <fork>true</fork>
+          </configuration>
         </plugin>
       </plugins>
     </pluginManagement>

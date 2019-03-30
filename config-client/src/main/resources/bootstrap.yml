@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      uri: http://127.0.0.1:7001/
+      profile: dev
+      label: master
+
+
+server:
+  port: 7002
+management:
+  security:
+    enabled: false #SpringBoot 1.5.X 以上默认开通了安全认证，如果不关闭会要求权限
