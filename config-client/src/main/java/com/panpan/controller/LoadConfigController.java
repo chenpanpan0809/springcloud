@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class LoadConfigController {
 
     @Value("${name}")
-     String name;
+    private String name;
 
     @GetMapping("/getConfig")
     public String getConfig(){
