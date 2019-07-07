@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
  * Created by panpan on 2019/3/31.
  */
 @RestController
-@RequestMapping("config")
 @RefreshScope
+@RequestMapping("config")
 public class LoadConfigController {
 
     @Value("${name}")

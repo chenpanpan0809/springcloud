@@ -10,6 +10,10 @@ spring:
           password: chen0809
 server:
   port: 7001
+endpoints:
+    web:
+      exposure:
+        include: refresh
 eureka:
   client:
     service-url:
